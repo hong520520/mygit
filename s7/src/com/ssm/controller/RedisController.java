@@ -15,7 +15,7 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.ssm.entity.User;
 import com.ssm.util.CacheUtil;
-
+//洪小太爷
 @Controller
 public class RedisController {
 	@Resource
