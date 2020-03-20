@@ -65,6 +65,7 @@ public class UserService {
 		
 		//封装总页数 
 		double tc = totalCount;
+//		double tc=Double.valueOf(totalCount);
         Double num =Math.ceil(tc/pageSize);//向上取整
         pageBean.setTotalPage(num.intValue());
       

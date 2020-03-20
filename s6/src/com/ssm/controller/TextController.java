@@ -31,8 +31,8 @@ public class TextController {
 		User result = userService.loginByNameAndPassword(user);
 		if(result!=null){
 			//登录成功
-			List<User> lists = userService.findAll();
-			model.addAttribute("userLists", lists);//回显用户信息
+//			List<User> lists = userService.findAll();
+//			model.addAttribute("userLists", lists);//回显用户信息
 			model.addAttribute("currentUser", result.getName());	
 			return "redirect:user";
 		}
@@ -46,8 +46,8 @@ public class TextController {
 	}
 	@RequestMapping("/findAll")
 	 public String findAllUser(@RequestParam(value="currentPage",defaultValue="1",required=false)int currentPage, Model model )throws Exception{
-		 List<User> lists = userService.findAll();
-			model.addAttribute("userLists", lists);
+//		 List<User> lists = userService.findAll();
+//			model.addAttribute("userLists", lists);
 			model.addAttribute("pagemsg", userService.findByPage(currentPage));
 			return "user";
 	 } 

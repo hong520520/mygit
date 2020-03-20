@@ -20,7 +20,7 @@
 			return false;
 		}
 		 
-		if(age>120 || age<0){
+		if(age>120 || age<1){
 			alert("年龄要在1到120岁哦")
 			return false;
 		}
