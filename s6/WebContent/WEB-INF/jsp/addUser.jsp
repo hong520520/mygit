@@ -40,7 +40,7 @@
 		姓名:<input type="text" name="name" id="name" /><br /> 
 		密码:<input type="text"name="password" id="password"/><br /> 
 		性别:<input type="radio"  name="sex"  value="男"  />男
-      <input type="radio"  name="sex"  value="女"  />女<br/>
+            <input type="radio"  name="sex"  value="女"  />女<br/>
 		年龄:<input type="text" name="age" id="age"/><br /> 
 		爱好:<input type="text"name="hobby" id="hobby"/><br /> 
 		<input type="submit" value="新增用户" /> 
