@@ -34,23 +34,23 @@ public class TextController {
 //			List<User> lists = userService.findAll();
 //			model.addAttribute("userLists", lists);//回显用户信息
 			model.addAttribute("currentUser", result.getName());	
-			return "redirect:user";
+			return "redirect:findAll";
 		}
 		return "error";
 	}
 	
-	@RequestMapping("/user")
+	@RequestMapping("/findAll")
 	public String findPageUser(@RequestParam(value="currentPage",defaultValue="1",required=false)int currentPage,Model model)throws Exception{
 		model.addAttribute("pagemsg", userService.findByPage(currentPage));//回显分页数据
 		return "user";
 	}
-	@RequestMapping("/findAll")
+	/*@RequestMapping("/findAll")
 	 public String findAllUser(@RequestParam(value="currentPage",defaultValue="1",required=false)int currentPage, Model model )throws Exception{
 //		 List<User> lists = userService.findAll();
 //			model.addAttribute("userLists", lists);
 			model.addAttribute("pagemsg", userService.findByPage(currentPage));
 			return "user";
-	 } 
+	 } */
 	
 	@RequestMapping("/updateById")
 	public String updateById(User user) {

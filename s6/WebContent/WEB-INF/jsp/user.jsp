@@ -93,13 +93,13 @@ thead {
    <span>
     <c:if test="${requestScope.pagemsg.currPage != requestScope.pagemsg.totalPage && requestScope.pagemsg.totalPage != 0}"></c:if> 
        <c:if test="${requestScope.pagemsg.currPage != 1}">
-           <a href="${pageContext.request.contextPath }/user?currentPage=1">[首页]</a>  
-           <a href="${pageContext.request.contextPath }/user?currentPage=${requestScope.pagemsg.currPage-1}">[上一页]</a>  
+           <a href="${pageContext.request.contextPath }/findAll?currentPage=1">[首页]</a>  
+           <a href="${pageContext.request.contextPath }/findAll?currentPage=${requestScope.pagemsg.currPage-1}">[上一页]</a>  
        </c:if>
        
        <c:if test="${requestScope.pagemsg.currPage != requestScope.pagemsg.totalPage}">
-           <a href="${pageContext.request.contextPath }/user?currentPage=${requestScope.pagemsg.currPage+1}">[下一页]</a>  
-           <a href="${pageContext.request.contextPath }/user?currentPage=${requestScope.pagemsg.totalPage}">[尾页]</a>  
+           <a href="${pageContext.request.contextPath }/findAll?currentPage=${requestScope.pagemsg.currPage+1}">[下一页]</a>  
+           <a href="${pageContext.request.contextPath }/findAll?currentPage=${requestScope.pagemsg.totalPage}">[尾页]</a>  
        </c:if>
    </span>
 </td>
